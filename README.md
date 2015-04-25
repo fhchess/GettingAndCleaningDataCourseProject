@@ -1,7 +1,7 @@
 Getting and Cleaning Data Course Project
 ==========================================
 This repository hosts the R code and documentation files for "Getting and Cleaning Data" Coursera course.
-[The dataset used in this project can be found at:](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
+The dataset used in this project can be found [here](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 ## Files
 
