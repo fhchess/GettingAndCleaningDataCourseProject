@@ -45,4 +45,4 @@ Used gsub() to pattern match and replace the activity labels to make it more rea
 
 
 ###Step 5: Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-Used the aggregate() function to subset the data by Subject and ActivityLabels and applies the mean function to those subsets. Then stored it into a new tidy dataframe called "newTidyData".
+Used the aggregate() function to subset the data by Subject and ActivityLabels and applies the mean function to those subsets. Then stored it into a new tidy dataframe called "newTidyData". After newTidyData is then exported to a txt file called "newTidyData.txt".
