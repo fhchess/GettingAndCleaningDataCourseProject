@@ -1,21 +1,21 @@
 library(dplyr)
 
 # Setting the working directory with the data unconpressed
-setwd("C:/Users/Frank/Desktop/Coursera Classes/Getting and Cleaning Data")
+setwd("C:/Users/Frank/Desktop/Coursera Classes/Getting and Cleaning Data/UCI HAR Dataset")
 
 ##Step 1 Merges the training and the test sets to create one data set.
 # Read in test set
-xTest <- read.table("UCI HAR Dataset/test/X_test.txt", header=FALSE)
-yTest <- read.table("UCI HAR Dataset/test/y_test.txt", header=FALSE)
-subjectTest <- read.table("UCI HAR Dataset/test/subject_test.txt", header=FALSE)
+xTest <- read.table("test/X_test.txt", header=FALSE)
+yTest <- read.table("test/y_test.txt", header=FALSE)
+subjectTest <- read.table("test/subject_test.txt", header=FALSE)
 
 # Read in train set
-xTrain <- read.table("UCI HAR Dataset/train/X_train.txt", header=FALSE)
-yTrain <- read.table("UCI HAR Dataset/train/y_train.txt", header=FALSE)
-subjectTrain <- read.table("UCI HAR Dataset/train/subject_train.txt", header=FALSE)
+xTrain <- read.table("train/X_train.txt", header=FALSE)
+yTrain <- read.table("train/y_train.txt", header=FALSE)
+subjectTrain <- read.table("train/subject_train.txt", header=FALSE)
 
 # Reading in Variable Label Names (Features.txt)
-LabelNames <- read.table("UCI HAR Dataset/features.txt", head=FALSE)
+LabelNames <- read.table("features.txt", head=FALSE)
 
 # Combining the like data frames together
 DFMain <- rbind(xTest, xTrain)
@@ -41,7 +41,7 @@ DFFinalExtract <- DFFinal[,MeanSDExtract]
 
 ##Step 3 Uses descriptive activity names to name the activities in the data set
 # Reads in the activity labels
-ActivityLabel <- read.table("UCI HAR Dataset/activity_labels.txt", header=FALSE)
+ActivityLabel <- read.table("activity_labels.txt", header=FALSE)
 
 # Matches the activity number with the correct activity label and puts it into a new column called "ActivityLabels"
 DFFinalExtract <- merge(DFFinalExtract, ActivityLabel, by.x="Activity", by.y="V1")
