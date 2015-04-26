@@ -5,7 +5,7 @@ The dataset used in this project can be found [here.](https://d396qusza40orc.clo
 
 ## Files
 
-The R code assumes that all the data has been uncompressed to a folder called "UCI HAR Dataset" with none of the file names changed.
+The R code assumes that all the data has been uncompressed in the same folder as the working directory with none of the file names changed.
 `CodeBook.md` describes the variables, data, and any work that was done to clean the data into a tidy data set.
 `run_analysis.R` contains the code to perform the analysis required in the project.
 

@@ -21,7 +21,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ##Description of the 5 Steps
 
 ###Step 1: Merges the training and the test sets to create one data set.
-After setting the working directory and extracting / uncompressing the raw data files to the folder "UCI HAR Dataset", read into R the following files:
+After setting the working directory and extracting / uncompressing the raw data files into the working directory, the following files are read into R:
 - subject_test.txt
 - x_test.txt
 - y_test.txt
